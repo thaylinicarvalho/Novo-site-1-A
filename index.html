@@ -52,7 +52,10 @@
         botao.addEventListener("click", botaoClicado);
 
         function boataoClicado(){
-            console.log("fui clicado")
+            console.log("fui clicado");     
+            let texto = botao.querySelector("span");
+            texto.textContent++;
+            
         }
     </script>
 </html>
