@@ -1,67 +1,93 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Blog</title>
-        <style>
-            header{
-                background-color: #680707;
-                color: #FFFFFF; 
-                text-align: center;
-                max-width: 800px;
-                margin: 0 auto;
-                padding: 16px;
-                border: 5px solid #310303;
-            }
-            main {
-                background-color: #FFFFFF;
-                color: #680707;
-                max-width: 800px;
-                margin: 0 auto;
-                padding: 16px;
-                display: flex;
 
-            }
-            img{
-                width: 80px;
-                height: 80px;
-            }
-            .artigo-autod {
-                font-weight: bold;
-            }
-        </style>
-    </head>
-    <body>
-        <header>
-            <h1>Freddy Fazbear's blog</p>
-                <p>Teorias, segredos e mistérios do universo de Five Nights at Freddy's</p>
-        </header>
-        <main>
-            <img src="imagem-blog.png" alt="Um close assustador do animatrônico Freddy Fazbear, com olhos brilahntes de amarelo, pronto para saltar no escuro. A imagem, com um visual pixelado retrô, traz as letras "FNAF" em neon vermelho tremeluzente logo abaixo, destacando-se contra a escuridão. O fundo sugere o interior sombrio da pizzaria Freddy Fazbear's Pizza.">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <style>
+        header {
+            background-color: #680707;
+            color: #FFFFFF;
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 16px;
+            border: 5px solid #310303;
+        }
+
+        main {
+            background-color: #FFFFFF;
+            color: #680707;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 16px;
+            
+        }
+        article{
+            display: flex;
+
+        }
+
+        img {
+            width: 80px;
+            height: 80px;
+        }
+
+        .artigo-autod {
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Freddy Fazbear's blog</p>
+            <p>Teorias, segredos e mistérios do universo de Five Nights at Freddy's</p>
+    </header>
+    <main>
+        <article>
+            <img src="imagem-blog.png"
+                alt="Um close assustador do animatrônico Freddy Fazbear, com olhos brilahntes de amarelo, pronto para saltar no escuro. A imagem, com um visual pixelado retrô, traz as letras "
+                FNAF" em neon vermelho tremeluzente logo abaixo, destacando-se contra a escuridão. O fundo sugere o interior
+                sombrio da pizzaria Freddy Fazbear's Pizza.">
             <div>
                 <h2>Meu primeiro post</h2>
                 <p class="artigo-autor">Por: Thaylini Perini</p>
-                <p>Boas-vindas ao meu novo blog! Prepare-se para descobrir os segredos mais sombios e teorias do universo de Five Nights at Freddy's.</p>
+                <p>Boas-vindas ao meu novo blog! Prepare-se para descobrir os segredos mais sombios e teorias do universo de
+                    Five Nights at Freddy's.</p>
                 <button>❤️ <span>0</span></button>
                 <button>💔 <span>0</span></button>
-
             </div>
-        </main>
-    </body>
-    <script>
-        const botoes = document.querySelectorAll("button");
-        
-        botoes.forEach(function(botao) {
-           botao.addEventListener("click", botaoClicado);
-           function botaoClicado() {
-               console.log("fui clicado");
-               let texto = botao.querySelector("span");
-               texto.textContent++;
-           }
-         });   
+        </article>
+        <article>
+            <img src="imagem-blog.png"
+                alt="Um close assustador do animatrônico Freddy Fazbear, com olhos brilahntes de amarelo, pronto para saltar no escuro. A imagem, com um visual pixelado retrô, traz as letras "
+                FNAF" em neon vermelho tremeluzente logo abaixo, destacando-se contra a escuridão. O fundo sugere o interior
+                sombrio da pizzaria Freddy Fazbear's Pizza.">
+            <div>
+                <h2>Meu segundo post</h2>
+                <p class="artigo-autor">Por: Thaylini Perini</p>
+                <p>Boas-vindas ao meu novo blog! Prepare-se para descobrir os segredos mais sombios e teorias do universo de
+                    Five Nights at Freddy's.</p>
+                <button>❤️ <span>0</span></button>
+                <button>💔 <span>0</span></button>
+            </div>
+        </article>
+    </main>
+</body>
+<script>
+    const botoes = document.querySelectorAll("button");
 
-    </script>
+    botoes.forEach(function (botao) {
+        botao.addEventListener("click", botaoClicado);
+        function botaoClicado() {
+            console.log("fui clicado");
+            let texto = botao.querySelector("span");
+            texto.textContent++;
+        }
+    })
+
+</script>
+
 </html>
-
-            
